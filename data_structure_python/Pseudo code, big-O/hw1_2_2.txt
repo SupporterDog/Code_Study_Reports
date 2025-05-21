@@ -1,0 +1,39 @@
+## 2.2. What's the running time of the `binarySearch_2()` is N in Big-Oh representation, when the size of `list_in`? Explain why you think like that.
+
+1. Write your Answer in the blank: 
+
+   binarySearch_2() runs in O(logN)  
+
+2. Explain your reason below:
+
+
+이 코드는 이진탐색의 기본적 예시와 같다.
+전체 데이터 수를 N이라고 하면, 이 코드에서는 재귀함수를 통해서 함수를 반복하면서 N/2, (N/2) * 
+(1/2), (N/2) * (1/2) * (1/2) ... 를 반복하면서 k번 반복한다고 하면, (1/2)^k * N 이 되므로, 이것이 
+(1/2)^k * N =1을 만족시키므로 2^k = N , 이를 정리해서 나타내면 k=logN ( 밑이 2인 로그 )
+즉, k가 탐색 횟수이므로, 시행 횟수가 logN이 되고, 즉, 시간 복잡도를 O(logN)으로 나타낼 수 있을 것이다.
+
+이 또한 작성한 코드를 기반으로 구체적으로 설명하면서, 
+증명하겠다.
+
+if length == 0:
+        return -1
+이 부분은 리스트 길이가 0이면 -1을 반환하라는 것이므로, O(1)이다.
+
+mid = length // 2
+이 부분 또한, length를 2로 나누는 것이므로, O(1)의 작동 시간을 가진다.
+
+if list_in[offset+mid] == value:
+        return offset+mid
+이 부분 또한 그저 확인하는 작업이므로 O(1)이다.
+
+elif list_in[offset+mid] > value:
+        return binarySearch_1(list_in, value, offset, mid)
+    else:
+        return binarySearch_1(list_in, value, offset+mid+1, length-mid-1)
+이 부분은 중간값이 찾고자 하는 값보다 크거나 작은지 확인하고, 왼쪽인지, 오른쪽인지
+판단하고 다시 이진 탐색을 수행하라고 하는 것이므로, 이는 이진 탐색의 시간 복잡도인
+O(logN)을 따른다.
+
+즉, binarySearch_2() runs in O(logN) 가 성립한다.
+
