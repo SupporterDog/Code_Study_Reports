@@ -1,2 +1,2 @@
 # Code_Study_Reports
-In-School assignments
+DGIST STUDENT 202011047 Seungtae Kim
