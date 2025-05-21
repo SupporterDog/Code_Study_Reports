@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IArticlePub">
+    <Position X="5.25" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgCAAIAAACIIIAAAAAAhAAAACgAAQABCCAAEAAAAAEA=</HashCode>
+      <FileName>hw2_김승태_202011047.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IArticleSub">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQICAAIACAAAAIAAAAggAAACIAAAAABQIABAAAhAAA=</HashCode>
+      <FileName>hw2_김승태_202011047.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
